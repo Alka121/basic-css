@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+    <style>
+        .combination{
+            background-color: grey;
+            color:white;
+            padding:20px;
+        }
+        .combination~h5{
+            color: red;
+            background-color: yellow;
+        }
+        .combination+h5+p{
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>There are four different combinations in css...!</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>Decending selector(Using Space)</li>
+        <li>Child selector(using > simbol)</li>
+        <li>Adjeacent selector(Using + simbol)</li>
+        <li>General sibligs selector(Using ~ simbol)</li>
+    </ol>
+    <hr>
+    <h1>General sibligs selector(Using ~ simbol)Example....!</h1>
+    <hr>
+    <section class="combination" id="akhil">
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+
+        <div>
+            <h3>First h3 tag...!(grandchild element)</h3>
+            <p>Select paragraph...!(grandchild element)</p>
+        </div>
+        
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+    </section>
+
+
+    <h5>This is the First tag</h5>
+    <p>This the first paragraph</p>
+
+
+    <h5 class="test">This is the second tag</h5>
+    <p>This the second paragraph</p>
+
+
+    <h5>This is the third tag</h5>
+    <p>this is the third paragraph</p>
+
+
+    <div>
+        <h5>This is the fourth tag</h5>
+        <p>this is the fourth pragraph</p>
+    </div>
+
+
+    <h5>This is the Fifth tag</h5>
+    <p>the is the fifth element</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BASICS</title>
+    <style>
+        .combination {
+            background-color: grey;
+            color: white;
+            padding: 20px;
+        }
+
+        .combination>h3 {
+            color: red;
+        }
+
+        .combination>p {
+            color: yellow;
+        }
+
+        .combination>div {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .combination>div>p {
+            color: blue;
+        }
+
+        .combination>div>h3 {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>There are four different combinations in css...!</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>Decending selector(Using Space)</li>
+        <li>Child selector(using > simbol)</li>
+        <li>Adjeacent selector(Using + simbol)</li>
+        <li>General sibligs selector(Using ~ simbol)</li>
+    </ol>
+    <hr>
+
+    <h1>Child Selector(Using > Simbol...!)</h1>
+    <hr>
+    <section class="combination" id="akhil">
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+
+        <div>
+            <h3>First h3 tag...!(grandchild element)</h3>
+            <p>Select paragraph...!(grandchild element)</p>
+        </div>
+        
+        <h3>First h3 tag...!(child element)</h3>
+        <p>Select paragraph...!(child element)</p>
+    </section>
+
+</body>
+
+</html>
